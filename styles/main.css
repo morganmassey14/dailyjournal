@@ -1,0 +1,39 @@
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+.date {
+    display: flex;
+    flex-direction: column;
+}
+.date input {
+    width: 200px;
+}
+
+.concepts {
+    display: flex;
+    flex-direction: column;
+}
+.concepts textarea {
+    width: 200px;
+}
+
+.entry {
+    display: flex;
+    flex-direction: column;
+}
+
+.entry textarea {
+    width: 200px;
+}
+
+.mood {
+    display: flex;
+    flex-direction: column;  
+}
+
+.mood select {
+    width: 200px;
+}
