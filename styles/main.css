@@ -1,8 +1,25 @@
+header {
+    text-align: center;
+}
+h2 {
+    font-size: 45pt;
+    color: #3D3A38;
+    font-family: 'Crimson Pro', serif;
+    text-align: center;
+}
 
-.input-form {
+body {
+    font-family:'Crimson Pro', serif;
+}
+
+fieldset {
+    background-color: #E4A199;
+}
+  .input-form {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 300px;
+    color: #3D3A38;
 }
 .date {
     display: flex;
