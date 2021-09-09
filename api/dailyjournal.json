@@ -1,34 +1,48 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "Morgan",
-            "email": "morganne1170@gmail.com",
-            "dateJoined": 1630513631166
-        }
-    ],
-    "entries": [
-        {
-            "id": 1,
-            "dateEntered": 1630513631166,
-            "concepts": "html and javascript",
-            "userId": 1,
-            "moodId": 1
-        }
-    ],
-    "messages": [
-        {
-            "id": 1,
-            "title": "Hello it's me",
-            "imageURL": "imageurl",
-            "senderId": 1,
-            "receiverId": 1
-        }
-    ],
-    "moods": [
-        {
-            "id": 1,
-            "moodCharacters":"sad"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "name": "Morgan",
+      "email": "morganne1170@gmail.com",
+      "dateJoined": 1630513631166
+    }
+  ],
+  "journal-entries": [
+    {
+      "id": 1,
+      "date": "07/24/2025",
+      "concept": "HTML & CSS",
+      "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
+      "mood": "Ok"
+    },
+    {
+      "date": "",
+      "concept": "jhgjhg",
+      "entry": "hhgjhg",
+      "mood": "",
+      "id": 2
+    },
+    {
+      "date": 1631218589204,
+      "concept": "como say roboto",
+      "entry": "mr legato",
+      "mood": "Sad",
+      "id": 3
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "title": "Hello it's me",
+      "imageURL": "imageurl",
+      "senderId": 1,
+      "receiverId": 1
+    }
+  ],
+  "moods": [
+    {
+      "id": 1,
+      "moodCharacters": "sad"
+    }
+  ]
 }
