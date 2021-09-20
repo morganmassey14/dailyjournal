@@ -7,7 +7,22 @@
       "dateJoined": 1630513631166
     }
   ],
-  "journal-entries": [],
+  "journal-entries": [
+    {
+      "date": 1632169843354,
+      "concept": "tefhovwrhrow",
+      "entry": "wkjfhkwjhefw",
+      "mood": "Hopeful",
+      "id": 1
+    },
+    {
+      "date": 1632164054881,
+      "concept": "wieners want to be the greatest",
+      "entry": "theyve lived in bars and danced on tables",
+      "mood": "Sad",
+      "id": 2
+    }
+  ],
   "messages": [
     {
       "id": 1,
