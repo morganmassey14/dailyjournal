@@ -12,10 +12,11 @@ const addEntriesToDom = (arrayofEntries) => {
         entryHTMLRepresentation += JournalEntryComponent(entry);
     }
     //then it will return back to the for loop, and set entry to be the next iteration (number 2) (will continue to do that until nothing left in the array)
-    entryLog.innerHTML += entryHTMLRepresentation 
+    entryLog.innerHTML = entryHTMLRepresentation 
     //entryHTMLREP is equal to the journalENtryComponent. gets added to inner HTML and then displays it.
 
 }
+
 
 export const EntryListComponent = (entries) => {
 

@@ -3,7 +3,8 @@ export const JournalEntryComponent = (entry) => {
             <div class="entry-date">${entry.date}</div>
             <div class="entry-concept">${entry.concept}</div>
             <div class= "entry-entry">${entry.entry}</div>
-            <div class= "mood">${entry.mood}</div
+            <div class= "mood">${entry.mood}</div>
+            <button id="delete__${entry.id}">Delete</button>
 
         </section>
     `
@@ -43,7 +44,6 @@ export const PostEntry = () => {
     </div>
     </fieldset>
 </form>
-
         <button id="newPost__submit">Save</button>
         <button id="newPost__cancel">Cancel</button>
     </div>
