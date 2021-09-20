@@ -1,7 +1,10 @@
+import { Footer } from "./Footer.js";
 import { EntryListComponent } from "./JournalEntryList.js";
-import { getJournalEntries, createJournalEntry } from "./DataManager.js";
+import { getJournalEntries, createJournalEntry, deletePost } from "./DataManager.js";
 import { PostEntry } from "./JournalEntry.js";
 // import { JournalEntryComponent } from "./JournalEntry.js";
+
+let yearSelected = 2021; //default
 
 const showPostEntry = () => {
 	//Get a reference to the location on the DOM where the nav will display
@@ -9,7 +12,15 @@ const showPostEntry = () => {
 	entryElement.innerHTML = PostEntry();
 }
 
+const entryLogElement = document.querySelector("#entryLog");
+
 const formElement = document.querySelector(".entryForm");
+
+
+const showFooter = (yearSelected) => {
+	const footerElement = document.querySelector("footer");
+	footerElement.innerHTML = Footer(yearSelected)
+  }
 
 const showJournalEntries = () => {
 	// we got all data from datamanager 
@@ -44,8 +55,21 @@ formElement.addEventListener("click", event => {
 	}
 })
 
+entryLogElement.addEventListener("click", event => {
+	console.log("eventTarget", event.target.id);
+	event.preventDefault();
+	if (event.target.id.startsWith("delete")) {
+	  const postId = event.target.id.split("__")[1];
+	  deletePost(postId)
+		.then(response => {
+		  showJournalEntries();
+		})
+	}
+  })
+
 showJournalEntries();
 showPostEntry();
+showFooter(yearSelected);
 
 
 // EntryListComponent();
